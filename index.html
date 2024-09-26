@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="about-section">
+        <div class="profile">
+            <img src="https://via.placeholder.com/150" alt="Your Name's Profile Picture" class="profile-image">
+            <h2>I AM VAISHNAVI BRAMHANKAR</h2>
+            <p>Hi! I'm Vaishnavi Bramhankar, a Computer Science student with a passion for technology and innovation. I enjoy exploring new programming languages and frameworks, and I'm particularly interested in software development and artificial intelligence. In my free time, I love working on personal projects that challenge my skills and allow me to learn new concepts. I'm excited about the endless possibilities that technology offers to solve real-world problems and make a positive impact.
+
+                .</p>
+        </div>
+    </section>
+    
+    <section id="projects-skills" class="projects-skills-section">
+        <h2>Projects & Skills</h2>
+        
+        <div class="projects">
+            <h3>Projects</h3>
+            <div class="project">
+                <h4>Project 1</h4>
+                <p>Description of Project 1.</p>
+                <button onclick="showMore('project1')">Show More</button>
+                <div class="more-info" id="project1" style="display: none;">
+                    <p>More details about Project 1.</p>
+                </div>
+            </div>
+            <div class="project">
+                <h4>Project 2</h4>
+                <p>Description of Project 2.</p>
+                <button onclick="showMore('project2')">Show More</button>
+                <div class="more-info" id="project2" style="display: none;">
+                    <p>More details about Project 2.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+                <p>Email: <a href="mailto:vaishnavijb2020@gmail.com">vaishnavijb2020@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
+            </div>
+        </div>
+        <p id="form-response" style="display: none;"></p>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
